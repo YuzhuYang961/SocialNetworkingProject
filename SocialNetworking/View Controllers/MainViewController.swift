@@ -24,7 +24,7 @@ import FirebaseDatabase
 import FirebaseStorage
 //platform
 
-class MainViewController: UIViewController {
+class MainViewController: MRKBaseViewController {
     
     var databaseRef: DatabaseReference!
     
@@ -64,14 +64,7 @@ class MainViewController: UIViewController {
         }else{
             print("Go Piggy")
         }
-        
-        if let controller = storyboard?.instantiateViewController(withIdentifier: "CustomerDetailsViewController") as? CustomerDetailsViewController {
-            
-            // question?
-//            controller.title_name = str!
-            
-            navigationController?.pushViewController(controller, animated: true)
-        }
+
     }
 
     func signIn(email:String, paswd:String)  {
@@ -123,6 +116,16 @@ class MainViewController: UIViewController {
 //        }
 //    }
     
+    
+    func updateUserInfor() {
+        if let user = Auth.auth().currentUser{
+            Database.database().reference().child(user.uid).updateChildValues(["Name" : "New Name"]) { (error, ref) in
+                print(error)
+            }
+
+        }
+    }
+    
     func fetchThedata()
     {
         
@@ -143,22 +146,6 @@ class MainViewController: UIViewController {
     
     }
     
-//    //Mark: - reset password
-//    func resetPassword(email: String) {
-//
-//        Auth.auth().sendPasswordReset(withEmail: email) { (error) in
-//            // ...
-////            self.signUp(email: email, paswd: newPaswd)
-//
-//            if let user = Auth.auth().currentUser {
-//            }
-//        }
-//    }
-//
-//    //Mark: logoutFromFirebase
-//    func logoutFromFirebase() {
-//        try! Auth.auth().signOut()
-//    }
 
 
     

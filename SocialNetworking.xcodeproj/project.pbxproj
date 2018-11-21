@@ -16,6 +16,14 @@
 		6213CD5F219F51FE00573A57 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6213CD5D219F51FE00573A57 /* LaunchScreen.storyboard */; };
 		6213CD67219F541E00573A57 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6213CD66219F541E00573A57 /* GoogleService-Info.plist */; };
 		6213CD69219F788E00573A57 /* AddColumnViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6213CD68219F788E00573A57 /* AddColumnViewController.swift */; };
+		621CBF4D21A4AD2500756BEC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621CBF4C21A4AD2500756BEC /* User.swift */; };
+		621CBF5021A4C5C600756BEC /* HomePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 621CBF4F21A4C5C600756BEC /* HomePageViewController.swift */; };
+		622A6C5D21A46E490051E5FD /* ResetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A6C5C21A46E490051E5FD /* ResetPasswordViewController.swift */; };
+		622A6C5F21A470ED0051E5FD /* MRKBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A6C5E21A470ED0051E5FD /* MRKBaseViewController.swift */; };
+		622A6C6121A485170051E5FD /* SettingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A6C6021A485170051E5FD /* SettingPageViewController.swift */; };
+		622A6C6321A48E190051E5FD /* EditProfilePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A6C6221A48E190051E5FD /* EditProfilePageViewController.swift */; };
+		622A6C6521A4A3180051E5FD /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A6C6421A4A3180051E5FD /* UserListViewController.swift */; };
+		622A6C6721A4A4820051E5FD /* UserDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 622A6C6621A4A4820051E5FD /* UserDetailTableViewCell.swift */; };
 		62A48ABB21A3AE880007AF31 /* SignUpPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62A48ABA21A3AE880007AF31 /* SignUpPageViewController.swift */; };
 		928C96FD7BB869EA78DB3D0B /* Pods_SocialNetworking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7662CE3D9820B09A8952C665 /* Pods_SocialNetworking.framework */; };
 /* End PBXBuildFile section */
@@ -33,6 +41,14 @@
 		6213CD60219F51FE00573A57 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6213CD66219F541E00573A57 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6213CD68219F788E00573A57 /* AddColumnViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddColumnViewController.swift; sourceTree = "<group>"; };
+		621CBF4C21A4AD2500756BEC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		621CBF4F21A4C5C600756BEC /* HomePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePageViewController.swift; sourceTree = "<group>"; };
+		622A6C5C21A46E490051E5FD /* ResetPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResetPasswordViewController.swift; sourceTree = "<group>"; };
+		622A6C5E21A470ED0051E5FD /* MRKBaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MRKBaseViewController.swift; sourceTree = "<group>"; };
+		622A6C6021A485170051E5FD /* SettingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingPageViewController.swift; sourceTree = "<group>"; };
+		622A6C6221A48E190051E5FD /* EditProfilePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfilePageViewController.swift; sourceTree = "<group>"; };
+		622A6C6421A4A3180051E5FD /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
+		622A6C6621A4A4820051E5FD /* UserDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDetailTableViewCell.swift; sourceTree = "<group>"; };
 		62A48ABA21A3AE880007AF31 /* SignUpPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpPageViewController.swift; sourceTree = "<group>"; };
 		673AADAF70AA50FAB9362FC1 /* Pods-SocialNetworking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SocialNetworking.release.xcconfig"; path = "Pods/Target Support Files/Pods-SocialNetworking/Pods-SocialNetworking.release.xcconfig"; sourceTree = "<group>"; };
 		7662CE3D9820B09A8952C665 /* Pods_SocialNetworking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SocialNetworking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,7 +99,9 @@
 				6213CD51219F51FC00573A57 /* AppDelegate.swift */,
 				62A48AB921A3A03F0007AF31 /* View Controllers */,
 				6213CD55219F51FC00573A57 /* Main.storyboard */,
+				620DC8E921A34869000D832A /* CustomerDetailsViewController.swift */,
 				6213CD68219F788E00573A57 /* AddColumnViewController.swift */,
+				622A6C5E21A470ED0051E5FD /* MRKBaseViewController.swift */,
 				6213CD5B219F51FE00573A57 /* Assets.xcassets */,
 				6213CD5D219F51FE00573A57 /* LaunchScreen.storyboard */,
 				6213CD60219F51FE00573A57 /* Info.plist */,
@@ -92,12 +110,26 @@
 			path = SocialNetworking;
 			sourceTree = "<group>";
 		};
+		621CBF4E21A4AD7E00756BEC /* User List */ = {
+			isa = PBXGroup;
+			children = (
+				622A6C6421A4A3180051E5FD /* UserListViewController.swift */,
+				622A6C6621A4A4820051E5FD /* UserDetailTableViewCell.swift */,
+				621CBF4C21A4AD2500756BEC /* User.swift */,
+			);
+			path = "User List";
+			sourceTree = "<group>";
+		};
 		62A48AB921A3A03F0007AF31 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				6213CD53219F51FC00573A57 /* MainViewController.swift */,
 				62A48ABA21A3AE880007AF31 /* SignUpPageViewController.swift */,
-				620DC8E921A34869000D832A /* CustomerDetailsViewController.swift */,
+				6213CD53219F51FC00573A57 /* MainViewController.swift */,
+				621CBF4F21A4C5C600756BEC /* HomePageViewController.swift */,
+				622A6C6021A485170051E5FD /* SettingPageViewController.swift */,
+				622A6C6221A48E190051E5FD /* EditProfilePageViewController.swift */,
+				622A6C5C21A46E490051E5FD /* ResetPasswordViewController.swift */,
+				621CBF4E21A4AD7E00756BEC /* User List */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -240,12 +272,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				621CBF4D21A4AD2500756BEC /* User.swift in Sources */,
 				6213CD5A219F51FC00573A57 /* SocialNetworking.xcdatamodeld in Sources */,
+				622A6C6721A4A4820051E5FD /* UserDetailTableViewCell.swift in Sources */,
+				622A6C6521A4A3180051E5FD /* UserListViewController.swift in Sources */,
+				622A6C6121A485170051E5FD /* SettingPageViewController.swift in Sources */,
 				6213CD54219F51FC00573A57 /* MainViewController.swift in Sources */,
+				622A6C5F21A470ED0051E5FD /* MRKBaseViewController.swift in Sources */,
 				6213CD69219F788E00573A57 /* AddColumnViewController.swift in Sources */,
+				621CBF5021A4C5C600756BEC /* HomePageViewController.swift in Sources */,
+				622A6C6321A48E190051E5FD /* EditProfilePageViewController.swift in Sources */,
 				62A48ABB21A3AE880007AF31 /* SignUpPageViewController.swift in Sources */,
 				620DC8EA21A34869000D832A /* CustomerDetailsViewController.swift in Sources */,
 				6213CD52219F51FC00573A57 /* AppDelegate.swift in Sources */,
+				622A6C5D21A46E490051E5FD /* ResetPasswordViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

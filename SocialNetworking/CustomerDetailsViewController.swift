@@ -11,9 +11,12 @@ import Firebase
 import TWMessageBarManager
 import FirebaseDatabase
 import FirebaseStorage
-class CustomerDetailsViewController: UIViewController {
+
+class CustomerDetailsViewController: MRKBaseViewController {
 
 
+    @IBOutlet weak var userPageBtn: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -31,6 +34,8 @@ class CustomerDetailsViewController: UIViewController {
             Database.database().reference().child(id!).observeSingleEvent(of: .value) { (snapshot) in
                 if let infor = snapshot.value as? [String : Any]{
                     self.navigationItem.title = infor["Name"] as? String
+                    let btnStr = "\(infor["Name"]!)'s User Information Page"
+                    self.userPageBtn.titleLabel?.text = btnStr
                 }
             }
         }

@@ -12,13 +12,21 @@ import TWMessageBarManager
 import FirebaseDatabase
 import FirebaseStorage
 
-class SignUpPageViewController: UIViewController {
+class SignUpPageViewController: MRKBaseViewController {
 
     @IBOutlet weak var sign_up_user_name: UITextField!
     
     @IBOutlet weak var sign_up_user_email: UITextField!
     
     @IBOutlet weak var sign_up_user_password: UITextField!
+    
+    @IBOutlet weak var confiredPassword: UITextField!
+    
+    
+    @IBOutlet weak var userAddress: UITextField!
+    
+    @IBOutlet weak var userPhoneNumber: UITextField!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,19 +36,19 @@ print("here")
     
     @IBAction func sign_up_btn(_ sender: UIButton) {
         
-        signUp(email: sign_up_user_email.text!, paswd: sign_up_user_password.text!, name: sign_up_user_name.text!)
+        signUp(email: sign_up_user_email.text!, paswd: sign_up_user_password.text!, name: sign_up_user_name.text!, address: userAddress.text!, phone: userPhoneNumber.text!)
         navigationController?.popViewController(animated: true)
     }
     
 
-    func signUp(email:String, paswd:String, name: String)
+    func signUp(email:String, paswd:String, name: String, address: String, phone : String)
     {
         
         Auth.auth().createUser(withEmail: email, password: paswd) { (authResult, error) in
             if error == nil
             {
                 guard let user = authResult?.user else {return}
-                let infor = ["Name" : name, "User Email" : email]
+                let infor = ["Name" : name, "User Email" : email, "User Address" : address, "User Phone Number" : phone]
                 Database.database().reference().child(user.uid).setValue( infor, withCompletionBlock: { (error, ref) in
                     if error == nil {
                         print("here")
